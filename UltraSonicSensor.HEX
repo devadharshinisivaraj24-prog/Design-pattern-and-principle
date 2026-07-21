@@ -1,0 +1,17 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class CalculatorTest {
+
+    @Test
+    public void testAddition() {
+        Calculator calc = new Calculator();
+        assertEquals(10, calc.add(4, 6));
+    }
+}
